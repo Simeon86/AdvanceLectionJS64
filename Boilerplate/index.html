@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boilerplate</title>
+
+    <!-- SEO -->
+
+    <meta name="description" content="Boilerplate HTML">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+
+    <!-- FAVICONS -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/webFavicon/apple-icon-57x57">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/webFavicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/webFavicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/webFavicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/webFavicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/webFavicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/webFavicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/webFavicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/webFavicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/webFavicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/webFavicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/webFavicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/webFavicon/favicon-16x16.png">
+    <!-- <link rel="manifest" href="assets/img/webFavicon/manifest.json"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/webFavicon//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+
+
+    <link rel="stylesheet" href="./assets/css/app.css">
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+ <!-- /**
+  * COURSE WORK
+Task: To render an HTML table based on an array of objects with identical properties using JavaScript.
+
+Instructions for completing the practical assignment:
+
+HTML, CSS and JS codes should be separated into separate files.
+The logic for generating the table should be described in the JS class.
+Data to be received asynchronously by a request to a remote server.
+The column headings of the table correspond to the names of the properties of the objects.
+The values of the cells correspond to the value of the property corresponding to the corresponding column.
+When clicking with the mouse on a row of the table to render a modal window, which - renders a form:
+with the labels containing the object's property names
+with the input-fields containing the values of the properties of the object
+renders 2 buttons
+to record data changes
+to close the modal window
+on pressing the save button, the edited row data should be reflected in the table
+To use more than one JS files
+To use ECMAScript Modules.
+To implement basic styling of the table by using css classes.
+Clarification: For the implementation of the modal window and styling, the use of the external library (eg Bootstrap) is allowed.
+
+Get the data for the table from the following link: https://raw.githubusercontent.com/vega/vega/master/docs/data/movies.json
+  */ -->
+
+    
+</head>
+
+<body>
+   
+
+    <div id="tableContainer"></div>
+
+    <div id="rowModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Change row data</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/bootstrap.native@2.0.15/dist/bootstrap-native-v4.min.js"
+    ></script>
+
+    <script type="module" src="./assets/js/app.js"></script>
+
+</body>
+
+</html>
